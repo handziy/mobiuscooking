@@ -623,7 +623,7 @@ form{
     }
 
     .homepageRecipesImage{
-        margin-top: 150px;
+        margin-top: 170px;
         margin-bottom: 40px;
         padding-bottom: 10px;
     }
@@ -633,8 +633,9 @@ form{
     }
 
     .homepageRecipesText h1 {
-        font-size: 32px; 
+        font-size: 27px; 
         margin-bottom: 8px; 
+        padding-top: 100px;
     }
 
     .homepageRecipesText p {
