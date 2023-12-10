@@ -1,0 +1,759 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
+
+body{
+    background-color:bisque;
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Merriweather', sans-serif;
+
+}
+    
+li, a, button{
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 20px;
+    color: white;
+}
+
+.headerBox{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: sienna;
+    border-radius: 5px;
+    height: 100px;
+    width: 100%;
+    padding: 10px 10%;
+    position: fixed;
+    z-index: 99;
+    
+}
+
+
+.navLinks {
+    margin-left: auto;
+    list-style: none;
+}
+
+.navLinks li{
+    display: inline-block;
+    padding: 0 10px;
+    margin-left: 10px;
+
+}
+
+.navLinks li a{
+    transition: all 0.5s ease 0s;
+}
+
+.navLinks li a:hover{
+    color: gold;
+}
+
+.logo {
+    cursor: pointer;
+    height: 30px;
+    margin-right: auto;
+}
+
+.signIn {
+    margin-left: auto;
+}
+
+button {
+    margin-left: 30px ;
+    padding: 10px 15px;
+    background-color:darkorange;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.5s ease 0s;
+    font-family: 'Merriweather', sans-serif;
+    width: 120px;
+    
+}
+
+button:hover{
+    background-color: orange;
+}
+
+.homepageRecipes{
+    position: relative;
+}
+.homepageRecipesImage {
+    width: 100%;
+    filter: brightness(0.8);
+    filter: contrast(0.6);
+    filter: blur(0.1);
+    z-index: 1;
+    padding-bottom: 80px;
+    margin-bottom: 80px;
+    margin-top: 100px;
+}
+
+.homepageRecipesText {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    z-index: 2;
+}
+
+.homepageRecipesText h1 {
+    font-size: 60px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.homepageRecipesText p{
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.explore {
+    padding: 10px 20px;
+    background-color: darkorange;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.explore:hover {
+    background-color: orange;
+}
+
+.homepageAboutUs,
+.homepageWorkshops {
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.homepageAboutUsText,
+.homepageWorkshopsText {
+    flex: 1;
+    padding: 20px;
+}
+
+.homepageAboutUsText h1,
+.homepageWorkshopsText h1{
+    font-size: 40px;
+    font-weight: 600px;
+    margin-bottom: 20px;
+    color: black;
+}
+
+.homepageAboutUsText p,
+.homepageWorkshopsText  p {
+    font-size: 25px;
+    font-weight: 200;
+    margin-bottom: 20px;
+    color: black
+}
+
+.homepageAboutUsText a,
+.homepageWorkshopsText a {
+    font-size: 25px;
+    font-weight: 200;
+    margin-bottom: 20px;
+    color: sienna;
+}
+
+.homepageAboutUsText a:hover,
+.homepageWorkshopsText a:hover{
+    text-decoration: underline;
+}
+
+.homepageAboutUsImage,
+.homepageWorkshopsImage {
+    width: 50%; 
+    display: flex;
+    justify-content: center;
+}
+
+.homepageAboutUsImage img,
+.homepageWorkshopsImage img {
+    width: 60%;
+    height: auto; 
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.homepageWorkshopsImage{
+    order: 1;
+}
+
+.homepageWorkshopsText{
+    order:2;
+}
+
+
+.Mariana {
+    text-align: center;
+    padding: 20px;
+    background-color: darkorange; 
+    color: white; 
+    padding: 50px;
+    margin-bottom: 100px;
+
+}
+
+.Mariana h1{
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.HomepageContactUs {
+    margin-left: 20%px;
+    margin-right: 20%px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+
+.HomepageContactUsContent {
+    flex: 1;
+    padding: 20px;
+}
+
+.HomepageContactUsContent h1 {
+    
+    font-size: 40px;
+    font-weight: 600px;
+    margin-bottom: 20px;
+    color: black;
+}
+
+.HomepageContactUsContent p {
+    font-size: 20px;
+    font-weight: 200;
+    margin-bottom: 20px;
+    color: black
+}
+
+.HomepageContactUsContent a {
+    font-size: 20px;
+    font-weight: 200;
+    margin-bottom: 20px;
+    color: sienna;
+}
+
+.HomepageContactUsContent a:hover{
+    text-decoration: underline;
+}
+
+.HomepageMap {
+    width: 50%; 
+    display: flex;
+    justify-content: center;
+}
+
+.HomepageMap iframe {
+    border-radius: 20px;
+
+}
+
+.HomepageContactUs {
+    flex-direction: column;
+    align-items: center;
+}
+
+.HomepageContactUsContent {
+    margin-bottom: 50px;
+}
+
+.HomepageMap {
+    width: 100%;
+}
+
+.footerBox {
+    background-color: sienna;
+}
+
+.footerBox {
+    width: 100%;
+    padding: 50px 20px 10px;
+}
+
+.socials {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.socials a{
+    text-decoration: none;
+    padding: 20px;
+    background-color: darkorange;
+    margin: 10px;
+    border-radius: 60px;
+    border-bottom: 100px;
+}
+
+.socials a i{
+    font-size: 2em;
+    color: sienna;
+}
+
+.socials a:hover{
+    background-color: sienna;
+    transition: 0.5s;
+}
+
+.socials a:hover i{
+    color: darkorange;
+    transition: 0.5s;
+}
+
+.footerNavLinks {
+    margin: 30px 0;
+}
+
+.footerNavLinks ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.footerNavLinks ul li a{
+    text-decoration: none;
+    color: white;
+    margin: 30px;
+    font-size: 1em;
+    transition: 0.6s;
+
+}
+
+.footerNavLinks ul li a:hover{
+  color: gold
+}
+
+.footerEnd {
+    padding: 20px;
+    background-color: rgb(94, 45, 23);
+    text-align: center;
+}
+
+.footerEnd p{
+    color: white;
+}
+
+.aboutUsPage,
+.contactusPage {
+    margin-right: 80px;
+    margin-left: 80px;
+    margin-bottom: 100px;
+
+}
+
+.aboutUsPage h1,
+.contactusPage h1 {
+    padding-top: 150px;
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: black;
+}
+
+.aboutUsPage h2 {
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: black;
+}
+
+.aboutUsPage p,
+.aboutUsPage ul li,
+.contactusPage p{
+    font-size: 15px;
+    font-weight: 200;
+    margin-bottom: 20px;
+    color: black;
+}
+
+.aboutUsPage a {
+    font-size: 15px;
+    font-weight: 200;
+    margin-bottom: 20px;
+    color: sienna;
+}
+
+.aboutUsPage a:hover {
+    text-decoration: underline;
+}
+
+.aboutUsPage ul {
+    padding-left: 20px;
+}
+
+.recipesPage h1,
+.workshopsPage h1{
+    padding-top: 150px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: black;
+}
+
+.recipeCatalog,
+.workshopsCatalog {
+    margin-right: 2%;
+    margin-left: 2%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.recipeCatalogsub,
+.workshopsCatalogsub {
+    height: 400px;
+    width: 30%; 
+    margin: 15px; 
+    box-sizing: border-box;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: sienna;
+    border-radius: 30px;
+}
+
+.workshopsCatalogsub {
+    height: 530px;
+}
+
+.recipeCatalogImg img,
+.workshopsCatalog img {
+    width: 375px; 
+    height: 200px; 
+    object-fit: cover; 
+    border-radius: 30px;
+    margin-top: 10px;
+}
+
+.recipeCatalogText p,
+.workshopsCatalogText p {
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.recipeCatalogButton button,
+.workshopsCatalogButton button{
+    margin-left: 0;
+    margin-bottom: 10px;
+    width: 150px;
+    font-size: 15px;
+
+}
+
+.recipeCatalogButton button:hover,
+.workshopsCatalogButton button:hover{
+    background-color: sienna;
+    color: darkorange;
+
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.recipeTemplatePage{
+    padding-top: 150px;
+}
+
+.recipeTemplatePage h1 {
+    text-align: center;
+    margin-bottom: 80px;
+    font-size: 40px;
+}
+
+.recipeTemplateContent {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 120px;
+    margin-right: 120px;
+}
+
+.recipeTemplateContentIngredients {
+    width: 30%;
+}
+
+.recipeTemplateContentImage {
+    width: 50%; 
+}
+
+.recipeTemplateContentImage img {
+    width: 90%;
+    height: auto;
+    border-radius: 10px; 
+}
+
+.recipeTemplateContent h2{
+    margin-bottom: 20px;
+    margin-top: 40px;
+}
+
+.recipeTemplateContentIngredients ul li{
+    font-size: 15px;
+    margin-bottom: 10px;
+    color: black;
+    margin-left: 15px;
+}
+
+.recipeTemplateContentPreparation{
+    margin-left: 120px;
+    margin-right: 120px;
+}
+
+.recipeTemplateContentPreparation h2{
+    margin-bottom: 20px;
+    margin-top: 40px;
+}
+.recipeTemplateContentPreparation ol li{
+    font-size: 15px;
+    margin-bottom: 10px;
+    color: black;
+    margin-left: 15px;
+}
+.contactusPage h1{
+    text-align: center; 
+    padding-bottom: 80px;
+} 
+.contactusPage a,
+.signinPage a,
+.signupPage a{
+    font-size: 15px;
+    text-decoration: none;
+    color: sienna;
+}
+.contactusPage a:hover,
+.signinPage a:hover,
+.signupPage a:hover{
+    text-decoration: underline;
+}
+
+.contactusPageContent {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.signinPage h1,
+.signupPage h1{
+    margin-bottom: 30px;
+}
+.signinPage,
+.signupPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    text-align: center;
+}
+  
+.signinPage button,
+.signupPage button{
+    margin: 10px auto;
+    width: 120px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: block;
+}
+form{
+    display: inline-block;
+    text-align: left;
+}
+
+
+@media (max-width: 768px ){
+    .headerBox {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+
+    .navLinks {
+        margin-top: 10px;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .navLinks ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .navLinks li {
+        margin: 10px;
+        font-size: 15px;
+    }
+
+    .signIn {
+        margin-top: 10px;
+        width: 100%;
+        text-align: center;
+
+    }
+
+    button {
+        width: 120px;
+        margin-left: 0;
+    }
+
+    .homepageRecipesImage{
+        margin-top: 150px;
+        margin-bottom: 40px;
+        padding-bottom: 10px;
+    }
+
+    .homepageRecipesText {
+        padding: 10px; 
+    }
+
+    .homepageRecipesText h1 {
+        font-size: 32px; 
+        margin-bottom: 8px; 
+    }
+
+    .homepageRecipesText p {
+        font-size: 16px; 
+        margin-bottom: 16px; 
+    }
+
+    .explore {
+        padding: 6px 12px; 
+        font-size: 0.7em; 
+    }
+
+    .homepageAboutUs,
+    .homepageWorkshops {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .homepageAboutUsText,
+    .homepageWorkshopsText {
+        order: 1;
+
+    }
+
+    .homepageAboutUsImage,
+    .homepageWorkshopsImage {
+        max-width: 100%;
+        width: 100%;
+        order:2;
+    }
+
+    .homepageAboutUsImage img,
+    .homepageWorkshopsImage img {
+        width: 60%;
+        border-radius: 20;
+    }
+
+    .footerNavLinks ul{
+        flex-direction: column;
+    }
+
+    .footerNavLinks ul li{
+        width:100%;
+        text-align: center;
+        margin: 10px;
+    
+    }
+
+    .footerEnd p{
+        font-size: 10px;
+    }
+
+    .aboutUsPage {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .aboutUsPage h1 {
+        padding-top: 200px;
+        font-size: 32px;
+        margin-bottom: 8px;
+    }
+
+    .aboutUsPage p {
+        margin-bottom: 16px;
+    }
+
+    .aboutUsPage a {
+        margin-bottom: 16px;
+    }
+
+    .aboutUsPage ul {
+        padding-left: 0;
+    }
+
+    .recipesPage h1,
+    .workshopsPage h1,
+    .recipeTemplatePage,
+    .contactusPage h1{
+        padding-top: 200px;
+    }
+
+    .recipeCatalogsub,
+    .workshopsCatalogsub {
+        width: 60%;
+        margin-left: 20%;
+        margin-right: 20%; 
+        float: none; 
+    }
+
+    .recipeTemplateContent {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .recipeTemplateContentIngredients,
+    .recipeTemplateContentImage {
+        width: 90%;
+    }
+
+    .recipeTemplateContentImage img {
+        width: 100%; 
+        border-radius: 10px;
+        margin-bottom: 10px;
+        order: 1;
+    }
+
+    .recipeTemplateContentIngredients{
+        order: 2;
+        margin-left: 120px;
+    }
+
+    .contactusPageContent {
+        grid-template-columns: 1fr;
+    }
+}
+
